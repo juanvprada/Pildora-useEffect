@@ -1,0 +1,31 @@
+/* CuentaRegresiva.css */
+.cuenta-regresiva-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cuenta-regresiva-image {
+    width: 500px;
+    height: 320px;
+    cursor: pointer;
+  }
+  
+  .cuenta-regresiva-message {
+    font-size: 1.2em;
+  }
+  
+  .cuenta-regresiva-game-over {
+    font-size: 2em;
+    color: red;
+  }
+
+  .cuenta-regresiva-message{
+
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(184, 12, 12);
+  }
+  .cuenta-regresiva-game-over{
+    font-size: 120px;
+  }
+  

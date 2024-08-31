@@ -1,70 +1,219 @@
-# Getting Started with Create React App
+# Píldora Formativa: Hook useEffect de React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introducción
 
-## Available Scripts
+Los hooks son una característica introducida en
+React que permite usar el estado y otras
+funcionalidades de React entre componentes
+funcionales sin necesidad de escribir clases.
+Antes de los hooks la gestión del estado y el ciclo de
+vida de los componentes solo estaba disponible en los
+componentes de clase, lo que hacía el código más
+complejo y menos reutilizable.
 
-In the project directory, you can run:
+## Presentación en Canva
 
-### `npm start`
+Puedes acceder a la presentación sobre useEffect en Canva en el siguiente enlace: [Enlace a la presentación en Canva](https://www.canva.com/design/DAGPaJ_xqQM/jthw_x_IIqFcM0R8IYAqsw/edit?utm_content=DAGPaJ_xqQM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Presentación en Canva](public/assets/Captura.JPG)
 
-### `npm test`
+## Contenido de la píldora
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Introducción
+- ¿Qué es useEffect?
+- Sintaxis
+- Comparación con useState
+- Conclusión
+- Ejercicio práctico
 
-### `npm run build`
+## Introducción
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Los hooks son una característica introducida en
+React que permite usar el estado y otras
+funcionalidades de React entre componentes
+funcionales sin necesidad de escribir clases.
+Antes de los hooks la gestión del estado y el ciclo de
+vida de los componentes solo estaba disponible en los
+componentes de clase, lo que hacía el código más
+complejo y menos reutilizable.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ¿Qué es useEffect?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+En React, useEffect es un Hook que te permite realizar efectos secundarios en tus componentes funcionales.
+Los efectos secundarios son acciones que van más allá de la simple renderización de un componente, como:
 
-### `npm run eject`
+- Fetch de datos: Traer información de APIs para actualizar tu interfaz.
+- Suscripciones: Escuchar eventos y reaccionar en consecuencia.
+- Manipulación del DOM: Interactuar con el DOM de forma controlada.
+- Limpieza: Asegurarte de que tus componentes se limpian correctamente al desmontarse.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Sintaxis
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Sintaxis de useEffect](public/assets/sintaxis.JPG)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Diferencias con useState
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Diferencias con useState](public/assets/useStatevsuseEffect.JPG)
 
-## Learn More
+## Conclusión
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+useEffect es una herramienta poderosa que, combinada con otros hooks como useState, proporciona una forma eficiente y moderna de gestionar la lógica de los componentes en aplicaciones React, promoviendo código más limpio, modular y fácil de mantener.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Es esencial para manejar efectos secundarios en componentes funcionales.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Ejercicio práctico
 
-### Making a Progressive Web App
+Explicación: vamos a crear un componente de React llamado CuentaRegresiva.
+Este componente va a mostrar un contador de vidas que disminuirá cada vez que se haga clic en un GIF.
+A medida que las vidas disminuyan se irá mostrando un mensaje en pantalla anunciando las vidas restantes
+y cuando el contador de vidas llegue a 0 se mostrará un mensaje de 'GAME OVER'.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Pasos a seguir para realizar el ejercicio práctico:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**1. Entorno de desarrollo:**
 
-### Deployment
+Asegúrate de tener Node.js y npm instalados en tu sistema. Si no los tienes
+puedes descargarlos desde nodejs.org. La instalación de Node.js incluye npm (Node Package Manager).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**2. Crea un nuevo Proyecto React:**
+- Abre la terminal
+- Navega a la carpeta deseada para ubicar el proyecto
+- Ejecuta el siguiente comando para crear una carpeta llamada cuenta-regresiva con la estructura básica de proyecto React
 
-### `npm run build` fails to minify
+```bash
+npx create-react-app pildora-useeffect
+```
+- Navega al directorio del proyecto 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+cd pildora-useeffect
+```
+- Si abriste la terminal en VS Code ya estarás en el proyecto y si lo hiciste en la terminal fuera de VS Code escribe el siguiente comando para abrir el proyecto en VS Code
+
+```bash
+code .
+```
+
+**3. Crear el archivo del componente:**
+
+En la carpeta 'src', crea un archivo llamado CuentaRegresiva.jsx y copia y pega en él el siguiente código:
+
+```bash
+import React, { useState, useEffect } from 'react';
+import './CuentaRegresiva.css'; // Importa el archivo CSS
+
+function CuentaRegresiva() {
+  const [vidas, setVidas] = useState(3);
+  const [gameOver, setGameOver] = useState(false);
+  const [mensajeVidas, setMensajeVidas] = useState('');
+
+  useEffect(() => {
+    if (vidas === 0) {
+      setGameOver(true);
+    } else {
+      setMensajeVidas(`Te quedan ${vidas} vidas`);
+    }
+  }, [vidas]);
+
+  const handleDecremento = () => {
+    if (vidas > 0) {
+      setVidas(vidas - 1);
+    }
+  };
+
+  return (
+    <div className="cuenta-regresiva-container">
+      <h1>Cuenta Regresiva</h1>
+      {!gameOver ? (
+        <div>
+          <p>{vidas}</p>
+          <img
+            src="https://media1.tenor.com/m/9eXjRJxrgxkAAAAd/super-mario-world-mario.gif"
+            alt="GIF de Restar 1"
+            onClick={handleDecremento}
+            className="cuenta-regresiva-image"
+          />
+          <p className="cuenta-regresiva-message">{mensajeVidas}</p>
+        </div>
+      ) : (
+        <h2 className="cuenta-regresiva-game-over">Game Over</h2>
+      )}
+    </div>
+  );
+}
+
+export default CuentaRegresiva;
+```
+
+**4. Crea el archivo CSS:**
+
+En la misma carpeta de 'src' puedes crear un archivo llamado CuentaRegresiva.css y en él copias y pegas el siguiente código:
+
+```bash
+/* CuentaRegresiva.css */
+.cuenta-regresiva-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cuenta-regresiva-image {
+  width: 500px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.cuenta-regresiva-message {
+  font-size: 1.2em;
+}
+
+.cuenta-regresiva-game-over {
+  font-size: 2em;
+  color: red;
+}
+```
+
+**5. Integra el componente en la aplicación:**
+
+Para ello abre el archivo 'App.js', en 'src/App.js' e incluye el nuevo component, el código debe quedar así:
+
+```bash
+import React from 'react';
+import './App.css';
+import CuentaRegresiva from './CuentaRegresiva';
+
+function App() {
+  return (
+    <div className="App">
+      <CuentaRegresiva />
+    </div>
+  );
+}
+
+export default App;
+```
+
+**6. Ejecuta la aplicación:**
+
+ Asegúrate de estar estar en el directorio del proyecto (en este caso pildora-useeffect) e inicia el terminal de desarrollo con el siguiente comando en la terminal:
+
+ ```bash
+npm start
+```
+
+la aplicación debería abrirse automáticamente en tu navegador predeterminado en 'http://localhost:3000'. Si no es así, abre esta URL manualmente.
+
+**7. Verifica el resultado:**
+
+Deberías ver el componente CuentaRegresiva que muestra un contador de vidas y un GIF.
+Al hacer clic en el GIF, el contador debería decrementar y mostrar un mensaje con las vidas restantes.
+Cuando lleguen a cero, se debería mostrar el mensaje "Game Over".
+
+
+#
+
+**¡Gracias!**
