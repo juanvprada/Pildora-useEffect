@@ -83,7 +83,7 @@ puedes descargarlos desde nodejs.org. La instalación de Node.js incluye npm (No
 **2. Crea un nuevo Proyecto React:**
 - Abre la terminal
 - Navega a la carpeta deseada para ubicar el proyecto
-- Ejecuta el siguiente comando para crear una carpeta llamada cuenta-regresiva con la estructura básica de proyecto React
+- Ejecuta el siguiente comando para crear una carpeta llamada 'pildora-useeffect' con la estructura básica de proyecto React
 
 ```bash
 npx create-react-app pildora-useeffect
@@ -99,9 +99,9 @@ cd pildora-useeffect
 code .
 ```
 
-**3. Crear el archivo del componente:**
+**3. Crea el archivo del componente:**
 
-En la carpeta 'src', crea un archivo llamado CuentaRegresiva.jsx y copia y pega en él el siguiente código:
+En la carpeta 'src', crea una carpeta que se llame 'components' y dentro un archivo llamado 'CuentaRegresiva'.jsx y copia y pega en él el siguiente código:
 
 ```bash
 import React, { useState, useEffect } from 'react';
@@ -152,7 +152,7 @@ export default CuentaRegresiva;
 
 **4. Crea el archivo CSS:**
 
-En la misma carpeta de 'src' puedes crear un archivo llamado CuentaRegresiva.css y en él copias y pegas el siguiente código:
+En la misma carpeta de 'components' puedes crear un archivo llamado CuentaRegresiva.css y en él copias y pegas el siguiente código:
 
 ```bash
 /* CuentaRegresiva.css */
@@ -179,7 +179,7 @@ En la misma carpeta de 'src' puedes crear un archivo llamado CuentaRegresiva.css
 
 **5. Integra el componente en la aplicación:**
 
-Para ello abre el archivo 'App.js', en 'src/App.js' e incluye el nuevo component, el código debe quedar así:
+Para ello abre el archivo 'App.js', en 'src/App.js' e incluye el nuevo componente, el código debe quedar así:
 
 ```bash
 import React from 'react';
@@ -199,7 +199,7 @@ export default App;
 
 **6. Ejecuta la aplicación:**
 
- Asegúrate de estar estar en el directorio del proyecto (en este caso pildora-useeffect) e inicia el terminal de desarrollo con el siguiente comando en la terminal:
+ Asegúrate de estar estar en el directorio del proyecto (en este caso 'pildora-useeffect') e inicia el terminal de desarrollo con el siguiente comando en la terminal:
 
  ```bash
 npm start
@@ -211,7 +211,7 @@ la aplicación debería abrirse automáticamente en tu navegador predeterminado 
 
 Deberías ver el componente CuentaRegresiva que muestra un contador de vidas y un GIF.
 Al hacer clic en el GIF, el contador debería decrementar y mostrar un mensaje con las vidas restantes.
-Cuando lleguen a cero, se debería mostrar el mensaje "Game Over".
+Cuando las vidas lleguen a cero, se debería mostrar el mensaje de "Game Over".
 
 
 #
