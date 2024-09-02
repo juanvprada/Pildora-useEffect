@@ -81,23 +81,34 @@ Asegúrate de tener Node.js y npm instalados en tu sistema. Si no los tienes
 puedes descargarlos desde nodejs.org. La instalación de Node.js incluye npm (Node Package Manager).
 
 **2. Crea un nuevo Proyecto React:**
-- Abre la terminal
+- Abre la terminal en Visual Studio Code
 - Navega a la carpeta deseada para ubicar el proyecto
 - Ejecuta el siguiente comando para crear una carpeta llamada 'pildora-useeffect' con la estructura básica de proyecto React
 
 ```bash
-npx create-react-app pildora-useeffect
+npm create vite@latest pildora-useEffect
+Selecciona React
+Selecciona JavaScript
+
 ```
 - Navega al directorio del proyecto 
 
 ```bash
-cd pildora-useeffect
+cd pildora-useEffect
 ```
-- Si abriste la terminal en VS Code ya estarás en el proyecto y si lo hiciste en la terminal fuera de VS Code escribe el siguiente comando para abrir el proyecto en VS Code
+- Instala las dependencias
 
 ```bash
-code .
+npm install
 ```
+
+- Asegúrate de estar estar en el directorio del proyecto (en este caso 'pildora-useeffect') e inicia el terminal de desarrollo con el siguiente comando en la terminal:
+
+```bash
+npm run dev
+```
+la aplicación debería abrirse automáticamente en tu navegador predeterminado en 'http://localhost:5173'. Si no es así, abre esta URL manualmente.
+
 
 **3. Crea el archivo del componente:**
 
@@ -157,24 +168,34 @@ En la misma carpeta de 'components' puedes crear un archivo llamado CuentaRegres
 ```bash
 /* CuentaRegresiva.css */
 .cuenta-regresiva-container {
-  text-align: center;
-  margin-top: 50px;
-}
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cuenta-regresiva-image {
+    width: 500px;
+    height: 320px;
+    cursor: pointer;
+  }
+  
+  .cuenta-regresiva-message {
+    font-size: 1.2em;
+  }
+  
+  .cuenta-regresiva-game-over {
+    font-size: 2em;
+    color: red;
+  }
 
-.cuenta-regresiva-image {
-  width: 500px;
-  height: 320px;
-  cursor: pointer;
-}
+  .cuenta-regresiva-message{
 
-.cuenta-regresiva-message {
-  font-size: 1.2em;
-}
-
-.cuenta-regresiva-game-over {
-  font-size: 2em;
-  color: red;
-}
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(184, 12, 12);
+  }
+  .cuenta-regresiva-game-over{
+    font-size: 120px;
+  }
 ```
 
 **5. Integra el componente en la aplicación:**
@@ -184,7 +205,7 @@ Para ello abre el archivo 'App.js', en 'src/App.js' e incluye el nuevo component
 ```bash
 import React from 'react';
 import './App.css';
-import CuentaRegresiva from './CuentaRegresiva';
+import CuentaRegresiva from './components/CuentaRegresiva';
 
 function App() {
   return (
@@ -197,15 +218,6 @@ function App() {
 export default App;
 ```
 
-**6. Ejecuta la aplicación:**
-
- Asegúrate de estar estar en el directorio del proyecto (en este caso 'pildora-useeffect') e inicia el terminal de desarrollo con el siguiente comando en la terminal:
-
- ```bash
-npm start
-```
-
-la aplicación debería abrirse automáticamente en tu navegador predeterminado en 'http://localhost:3000'. Si no es así, abre esta URL manualmente.
 
 **7. Verifica el resultado:**
 
